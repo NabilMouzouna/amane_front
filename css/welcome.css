@@ -1,0 +1,21 @@
+.welcome-page nav{
+    position: fixed;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    background-color: white;
+}
+.welcome-page a{
+    color: inherit;
+}
+.welcome-page nav a:hover {
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+
+/* ------------------------ HERO SECTION ------------------------------- */
+.hero {
+    background-color: red;
+}
+.hero .container{
+    height: 100%;
+}
