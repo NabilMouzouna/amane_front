@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/uLogin.css">
+    <link rel="stylesheet" href="../../css/welcome.css" />
+    <link rel="stylesheet" href="../../css/questionnaire.css" />
+<!-- ------------------------------------    UNICONS CDN --------------------------- -->
+<link
+rel="stylesheet"
+href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+/>
+    <title>Login</title>
+</head>
+<body>
+    <nav class="flex justify-between align-center p-1 px-2 nav-scrolled">
+        <div class="avatar-container">
+              <img src="../assets/Logo.png" alt="amane logo" />
+            </div>
+            <div class="flex align-center mb-flex-rev">
+              <i class="uil uil-apps hidden" id="menu"></i>
+              <ul class="navigation p-1">
+                <a href="#"
+                  ><li class="p-1 mx-2">
+                    <div class="hidden"><i class="icon uil uil-estate"></i></div>
+                    Accueil
+                  </li></a
+                >
+                <a href="#">
+                  <li class="p-1 mx-2">
+                    <div class="hidden">
+                      <i class="icon uil uil-info-circle"></i>
+                    </div>
+                    A propos
+                  </li></a
+                >
+    
+                <a href="#"
+                  ><li class="p-1 mx-2">
+                    <div class="hidden">
+                      <i class="icon uil uil-comment-question"></i>
+                    </div>
+                    FAQ
+                  </li></a
+                >
+    
+                <a href="#"
+                  ><li class="p-1 mx-2">
+                    <div class="hidden">
+                      <i class="icon uil uil-comment-alt-heart"></i>
+                    </div>
+                    Testimonial
+                  </li></a
+                >
+                <a href="#"
+                  ><li class="p-1 mx-2">
+                    <div class="hidden">
+                      <i class="icon uil uil-headphones"></i>
+                    </div>
+                    Support
+                  </li></a
+                >
+              </ul>
+              <button class="main-btn">commacer</button>
+            </div>
+          </nav>
+    
+    <main class="login-page">
+        <section class="left-section">
+            <h1>Psychologue pour enfant,pour adults ou therapie de couple, trouvez celui qui convient</h1>
+            <p>over 1000 courses taught by real creatives</p>
+        </section>
+
+        <!-- ---------------------RIGHT SECTION ----------------------------- -->
+        <!-- flex-col align-center justify center -->
+        <section class="right-section">
+        <div class="form-container flex-col align-center justify">
+            <div class="avatar-container">
+                <img src="../../assets/Logo.png" alt="amane logo">
+            </div>
+            <h1>Register</h1>
+            <p class="m-1">please fill us with these following infomation</p>
+            
+            <form action="">
+              <!-- ====================================== FORM one ====================================== -->
+              <div id="form-one">
+                <!-- --------------- multi choice questionnaire -------------- -->
+                <div class="question-wrapper flex-col align-center" >
+                  <div class="question p-1 flex justify-around align-center" id="faq">
+                      <h2>multichoice question</h2>
+                      <i class="uil uil-angle-right-b"></i>
+                  </div>
+                  <div class="multi-answer flex justify-between align-center my-1 p-1 px-2" id="multi-choice">
+                    <label for="q2a1" class="center" >25%</label>
+                    <input type="checkbox" name="q2" id="q2a1"  >
+                  </div>
+                  <div class="multi-answer flex justify-between align-center my-1 p-1 px-2" id="multi-choice">
+                    <label for="q2a1" class="center" >50%</label>
+                    <input type="checkbox" name="q2" id="q2a1"  >
+                  </div>
+                  <div class="multi-answer flex justify-between align-center my-1 p-1 px-2" id="multi-choice">
+                    <label for="q2a1" class="center" >75%</label>
+                    <input type="checkbox" name="q2" id="q2a1"  >
+                  </div>
+                  <div class="multi-answer flex justify-between align-center my-1 p-1 px-2" id="multi-choice">
+                    <label for="q2a1" class="center" >100%</label>
+                    <input type="checkbox" name="q2" id="q2a1"  >
+                  </div>
+                  
+              </div>
+              <!-- ------------------- one choice questionnaire -------------- -->
+              <div class="question-wrapper flex-col align-center" >
+                  <div class="question p-1 flex justify-around align-center" id="faq">
+                      <h2>single choice question </h2>
+                      <i class="uil uil-angle-right-b"></i>
+                  </div>
+                  <div class="sg-answer flex justify-between align-center my-1 p-2" id="sg-choice">
+                    <label for="q1a1">GOOD</label>
+                    <input type="radio" name="q1" id="q1a1"  >
+                  </div>
+                  
+                  <div class="sg-answer flex justify-between align-center my-1 p-2" id="sg-choice">
+                    <label for="a2">BAD</label>
+                    <input type="radio" name="q1" id="q1a2" >
+                  </div>
+              </div>
+            <!-- --------------- minput text questionnaire -------------- -->
+            <div class="question-wrapper flex-col align-center" >
+              <div class="question p-1 flex justify-around align-center" id="faq">
+                  <h2>text field question </h2>
+                  <i class="uil uil-angle-right-b"></i>
+              </div>
+              <textarea name="q3" id="" class="txt-area p-1" placeholder="entrer les detailes ici"></textarea>
+          </div>
+            <!-- --------------- file upload -------------- -->
+            <div class="flex justify-between align-center my-1 p-2">
+              <label for="file1" class="my-1 file">file 1</label>
+                <input type="file" name="file1" id="file1" class="file">
+            </div>
+          </div>
+
+
+        </div>
+        <!-- ========================================================= FORM 2 ======================================== -->
+        <div id="form-two" class="hide">
+          <h1 >hello world</h1>
+        </div>
+        <!-- --------------------------- NEXT ----------------------------- -->
+        <div class=" flex justify-between align-center">
+          <button class="main-btn hide my-2" id="previous">preccedant</button>
+          <button class="main-btn my-2" id="next">suivant</button>
+            </div>
+            </form>
+        </div>    
+        </section>
+    </main>
+    <script src="../js/main.js"></script>
+</body>
+</html>

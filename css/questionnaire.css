@@ -1,0 +1,65 @@
+
+.question-wrapper{
+    width: 90%;
+}
+.question{
+    cursor: pointer;
+    border-radius: 10px;
+    width: 90%;
+    background-color: var(--background-color-b);
+    margin-bottom: 20px;
+}
+.question h2{
+    font-size: 18px;
+    font-weight: 400;
+    flex: 1;
+
+}
+.question-clicked ~ .sg-answer,.question-clicked ~ .multi-answer{
+    display: flex;
+}
+.question-clicked ~ .txt-area{
+    display: block;
+}
+.question i{
+    font-size: 20px;
+    transform: scale(1.5);
+}
+.multi-answer,.sg-answer,.txt-area{
+    display: none;
+}
+.multi-answer,.sg-answer{
+    text-align: center;
+    z-index: 1;
+    border-radius: 4rem;
+    height: 4rem;
+    width: 85%;
+    transition: .3s ease;
+    border: 2px solid var(--primary-color);
+}
+.txt-area{
+    width: 80%;
+    min-height:8rem ;
+    border: 2px solid var(--primary-color);
+    outline: var(--color-b);
+}
+
+.sg-answer label,.multi-answer label {
+    height: 100%;
+    width: 100%;
+}
+
+.right-section input[type="checkbox"],.right-section input[type="radio"]{
+    visibility: hidden;
+}
+.sg-answer:hover,.btn-active{
+    border: none;
+    color: white;
+    background-color:var(--color-b);
+}
+.hide{
+    display: none!important;
+}
+.right-section button{
+    margin-bottom: 4rem;
+}
