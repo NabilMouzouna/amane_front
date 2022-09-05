@@ -1,0 +1,60 @@
+.psy-profile{
+    padding-top: 5vw;
+    height: 100vh;
+    background-color: #E2F8F9;
+}
+.profile-nav{
+    background-color: transparent;
+}
+.psy-profile .avatar-container{
+    width: 120px;
+    height: 120px;
+}
+.psy-profile button{
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    padding: 10px max(5vw,1.5rem);
+    border-radius: 3rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: .3s ease;
+}
+.psy-profile button:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+.psy-profile h3{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.psy-profile h2{
+    font-weight: 500;
+    color: rgb(37, 36, 36);
+}
+.psy-profile h2::after{
+    content: '';
+    background-color: var(--primary-color);
+    display: block;
+    margin:.3rem 0 0 1rem;
+    width: 5rem;
+    height: 3px;
+}
+.psy-profile span {
+    margin-left: 20px;
+    color: var(--primary-color);
+}
+.psy-profile p{
+    line-height: 1.6;
+    color: rgb(56, 55, 55);
+
+}
+.tarifs{
+    width: fit-content;
+    line-height: 1.9;
+    background-color: var(--primary-color);
+    color: white;
+    margin:1rem 0 5rem 1rem;
+    border-radius: 10px;
+    padding: 10px 2rem;
+}

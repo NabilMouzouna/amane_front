@@ -15,7 +15,8 @@ nav {
   min-width: 100vw;
   background-color: transparent;
   color: white;
-  max-height: 8rem;
+  max-height: 5rem;
+  padding: 5px 2rem;
 }
 .nav-scrolled {
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
