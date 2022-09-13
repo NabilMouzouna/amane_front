@@ -6,6 +6,7 @@
 }
 .questionnaire-container label{
     display: inline;
+    margin-inline: 15px;
 }
 .questionnaire-container h3{
     line-height: 1.6;
