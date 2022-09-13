@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/uLogin.css">
     <link rel="stylesheet" href="../../css/welcome.css" />
+    <link rel="stylesheet" href="../../css/questionnaire.css">
 <!-- ------------------------------------    UNICONS CDN --------------------------- -->
 <link
 rel="stylesheet"
@@ -83,15 +84,87 @@ href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
             <h1>sign up</h1>
             <p class="m-1">please fill us with these following infomation ?</p>
             <form action="">
-                <label for="email">le nom complet</label>
-                <input class="main-input my-1" type="text" id="nom" name="nom" placeholder="entrer votre nom">
-                <label for="email">Email</label>
-                <input class="main-input my-1" type="email" id="email" name="email" placeholder="entrer votre email">
-                <label for="email">numero de tele</label>
-                <input class="main-input my-1" type="text" id="phone" name="phone" placeholder="entrer votre numero">
-                <label for="password">Password</label>
-                <input class="main-input my-1" type="password" id="password" name="password" placeholder="entrer votre password">
-                <button class="main-btn-stretched">Se connecter</button>
+              <!-- ====================================== FORM one ====================================== -->
+              <div class="questionnaire-container">
+                  <div class="questionnaire py-2">
+                    <h1>Questionnaire</h1>
+                    <h3 for="q1">est-ce que vous êtes un coach psychologue psychiatre Hypnothérapeute psychothérapeute où bien autre .</h3>
+                    <input type="text" id="q1" name="q1" placeholder="type du praticien">
+                    <h3 for="q2">où vous passez la  la majorité de votre temps</h3>
+                    <input type="radio" name="q2" id="q2a1">
+                    <label for="q2a1">Des autres plates-formes de thérapie en ligne</label><br>
+                    <input type="radio" name="q2" id="q2a2">
+                    <label for="q2a2">des cliniques ou bien praticien privé</label><br>
+                    <input type="radio" name="q2" id="q2a3">
+                    <label for="q2a3">je ne travaille pas maintenant </label><br>
+                    <h3> les années d’expérience</h3>
+                    <input type="text" name="q3" id="q3" placeholder="années d’expérience">
+                    <h3>J’offre une thérapie pour:</h3>
+                    <input type="checkbox" name="q4a1" id="q4a1">
+                    <label for="q4a1">Les adolescents</label><br>
+                    <input type="checkbox" name="q4a2" id="q4a2">
+                    <label for="q4a2">Les couples</label><br>
+                    <input type="checkbox" name="q4a3" id="q4a3">
+                    <label for="q4a3">Therapie individuelle</label><br>
+                    <h3>Ajouter vos expertises :</h3>
+                    <input type="checkbox" name="q5a1" id="q5a1">
+                    <label for="q5a1">La dépression stress et anxiété</label><br>
+                    <input type="checkbox" name="q5a2" id="q5a2">
+                    <label for="q5a2">Faire face au dépendance</label><br>
+                    <input type="checkbox" name="q5a3" id="q5a3">
+                    <label for="q5a3">Conflits familiaux</label><br>
+                    <input type="checkbox" name="q5a4" id="q5a4">
+                    <label for="q5a4">Traumatisme et maltraitance</label><br>
+                    <input type="checkbox" name="q5a5" id="q5a5">
+                    <label for="q5a5">Faire face au deuil et à la perte</label><br>
+                    <input type="checkbox" name="q5a6" id="q5a6">
+                    <label for="q5a6">Problèmes liés à l’intimité</label><br>
+                    <input type="checkbox" name="q5a7" id="q5a7">
+                    <label for="q5a7">Motivation estime de soi confiance</label><br>
+                    <input type="checkbox" name="q5a8" id="q5a8">
+                    <label for="q5a8">Gestion de la colère</label><br>
+                    <input type="checkbox" name="q5a9" id="q5a9">
+                    <label for="q5a9">Difficultés de carrière</label><br>
+                    <input type="checkbox" name="q5a10" id="q5a10">
+                    <label for="q5a10">Faire face aux changements de vie</label><br>
+                    <input type="checkbox" name="q5a11" id="q5a11">
+                    <label for="q5a11">Coaching exécutif et professionnels</label><br>
+                    <input type="checkbox" name="q5a12" id="q5a12">
+                    <label for="q5a12">Trouble bipolaire</label><br>
+                    <input type="checkbox" name="q5a13" id="q5a13">
+                    <label for="q5a13">problèmes relationnels</label><br>
+                    <h3>sélectionner des domaines d’intérêt supplémentaire ( facultatif )</h3>
+                    <input type="checkbox" name="q6a1" id="q6a1">
+                    <label for="q6a1">La jalousie</label><br>
+                    <input type="checkbox" name="q6a2" id="q6a2">
+                    <label for="q6a2">Phobie</label><br>
+                    <input type="checkbox" name="q6a3" id="q6a3">
+                    <label for="q6a3">Cancer</label><br>
+                    <input type="checkbox" name="q6a4" id="q6a4">
+                    <label for="q6a4">Problème de paternité</label><br>
+                    <input type="checkbox" name="q6a5" id="q6a5">
+                    <label for="q6a5">Dépression</label><br>
+                    <input type="checkbox" name="q6a6" id="q6a6">
+                    <label for="q6a6">Infidélité</label><br>
+                    <input type="checkbox" name="q6a7" id="q6a7">
+                    <label for="q6a7">Paranoïa</label><br>
+                    <input type="checkbox" name="q6a8" id="q6a8">
+                    <label for="q6a8">Trouble de la personnalité</label><br>
+                    <h3>Informations sur la licence :(facultatif)</h3>
+                    <label for="q7">téléchargez votre diplôme/certificat  de thérapie</label><br>
+                    <input type="file" name="deplome" id="q7">
+                    <h3>tarif</h3>
+                    <input type="text" name="tarif" id="tarif" placeholder="tarif">
+                    <h1>Information personnel</h1>
+                    <label for="name">le nom complet</label><br>
+                    <input type="text" name="name" id="name" placeholder="entrer votre nom"><br>
+                    <label for="name">email adress</label><br>
+                    <input type="email" name="email" id="email" placeholder="entrer votre email"><br>
+                    <label for="name">password</label><br>
+                    <input type="password" name="password" id="password" placeholder="entrer votre password">
+                  </div>
+              </div>
+              <button class="main-btn">s'inscrire</button>
             </form>
             <p class="termes">j'ai deja un compte ?<a href="./uLogin.html"><strong>se connecter</strong></a></p>
         

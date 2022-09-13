@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/questionnaire.css">
     <link rel="stylesheet" href="../../css/uLogin.css">
     <link rel="stylesheet" href="../../css/welcome.css">
+    <link rel="stylesheet" href="../../css/questionnaire.css">
 <!-- ------------------------------------    UNICONS CDN --------------------------- -->
 <link
 rel="stylesheet"
@@ -16,9 +16,9 @@ href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     <title>Login</title>
 </head>
 <body>
-    <nav class="flex justify-between align-center p-1 px-2 nav-scrolled">
+    <nav class="flex justify-between align-center nav-scrolled">
         <div class="avatar-container">
-              <img src="../assets/Logo.png" alt="amane logo" />
+              <img src="../../assets/Logo.png" alt="amane logo" />
             </div>
             <div class="flex align-center mb-flex-rev">
               <i class="uil uil-apps hidden" id="menu"></i>
@@ -67,7 +67,6 @@ href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
               <button class="main-btn">commacer</button>
             </div>
           </nav>
-    
     <main class="login-page">
         <section class="left-section">
             <h1>Psychologue pour enfant,pour adults ou therapie de couple, trouvez celui qui convient</h1>
@@ -77,82 +76,47 @@ href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
         <!-- ---------------------RIGHT SECTION ----------------------------- -->
         <!-- flex-col align-center justify center -->
         <section class="right-section">
-        <div class="form-container flex-col align-center justify">
+        <div class="form-container flex-col align-center">
             <div class="avatar-container">
                 <img src="../../assets/Logo.png" alt="amane logo">
             </div>
             <h1>Register</h1>
-            <p class="m-1">please fill us with these following infomation</p>
+            <p>merci de remplir ces champs avec vos informations</p>
             
             <form action="">
               <!-- ====================================== FORM one ====================================== -->
-              <div id="form-one">
-                <!-- --------------- multi choice questionnaire -------------- -->
-                <div class="question-wrapper flex-col align-center" >
-                  <div class="question p-1 flex justify-around align-center" id="faq">
-                      <h2>multichoice question</h2>
-                      <i class="uil uil-angle-right-b"></i>
-                  </div>
-                  <div class="multi-answer flex justify-between align-center my-1 p-1 px-2" id="multi-choice">
-                    <label for="q2a1" class="center" >25%</label>
-                    <input type="checkbox" name="q2" id="q2a1"  >
-                  </div>
-                  <div class="multi-answer flex justify-between align-center my-1 p-1 px-2" id="multi-choice">
-                    <label for="q2a1" class="center" >50%</label>
-                    <input type="checkbox" name="q2" id="q2a1"  >
-                  </div>
-                  <div class="multi-answer flex justify-between align-center my-1 p-1 px-2" id="multi-choice">
-                    <label for="q2a1" class="center" >75%</label>
-                    <input type="checkbox" name="q2" id="q2a1"  >
-                  </div>
-                  <div class="multi-answer flex justify-between align-center my-1 p-1 px-2" id="multi-choice">
-                    <label for="q2a1" class="center" >100%</label>
-                    <input type="checkbox" name="q2" id="q2a1"  >
-                  </div>
-                  
-              </div>
-              <!-- ------------------- one choice questionnaire -------------- -->
-              <div class="question-wrapper flex-col align-center" >
-                  <div class="question p-1 flex justify-around align-center" id="faq">
-                      <h2>single choice question </h2>
-                      <i class="uil uil-angle-right-b"></i>
-                  </div>
-                  <div class="sg-answer flex justify-between align-center my-1 p-2" id="sg-choice">
-                    <label for="q1a1">GOOD</label>
-                    <input type="radio" name="q1" id="q1a1"  >
-                  </div>
-                  
-                  <div class="sg-answer flex justify-between align-center my-1 p-2" id="sg-choice">
-                    <label for="a2">BAD</label>
-                    <input type="radio" name="q1" id="q1a2" >
-                  </div>
-              </div>
-            <!-- --------------- minput text questionnaire -------------- -->
-            <div class="question-wrapper flex-col align-center" >
-              <div class="question p-1 flex justify-around align-center" id="faq">
-                  <h2>text field question </h2>
-                  <i class="uil uil-angle-right-b"></i>
-              </div>
-              <textarea name="q3" id="" class="txt-area p-1" placeholder="entrer les detailes ici"></textarea>
-          </div>
-            <!-- --------------- file upload -------------- -->
-            <div class="flex justify-between align-center my-1 p-2">
-              <label for="file1" class="my-1 file">file 1</label>
-                <input type="file" name="file1" id="file1" class="file">
-            </div>
-          </div>
+              <div class="questionnaire-container">
+                  <div class="questionnaire py-2">
+                    <h1>Questionnaire</h1>
+                    <h3>Quel est ton genre?</h3>
+                    <input type="radio" name="q1" id="q1a1"><label for="q1a1">Homme</label><br>
+                    <input type="radio" name="q1" id="q1a2"><label for="q1a2">Femme</label>
+                    <h3>Quel age as-tu?</h3>
+                    <input type="text" name="q2" id="q2">
+                    <h3>avez-vous deja ete en therapie auparavant</h3>
+                    <input type="radio" name="q3" id="q3a1"><label for="q3a1">Oui</label><br>
+                    <input type="radio" name="q3" id="q3a2"><label for="q3a2">No</label><br>
+                    <input type="radio" name="q3" id="q3a3"><label for="q3a2">je prefere ne pas dire</label>
+                    <h3>vous considerez-vous comme religieux</h3>
+                    <input type="radio" name="q4" id="q4a1"><label for="q4a1">Oui</label><br>
+                    <input type="radio" name="q4" id="q4a2"><label for="q4a2">No</label>
+                    <h3>qu'est-ce qui vous a amene a envisager une theraoie aujourd'hui</h3>
+                    <input type="checkbox" name="q5a1" id="q4a1"><label for="q5a1">Oui</label><br>
+                    <input type="checkbox" name="q5a2" id="q4a2"><label for="q5a2">No</label>
+                    <h3>Votre status de relation</h3>
+                    <input type="checkbox" name="q6a1" id="q4a1"><label for="q4a1">seul</label><br>
+                    <input type="checkbox" name="q6a1" id="q4a2"><label for="q4a2">en couple</label>
 
-
-        </div>
-        <!-- ========================================================= FORM 2 ======================================== -->
-        <div id="form-two" class="hide">
-          <h1 >hello world</h1>
-        </div>
-        <!-- --------------------------- NEXT ----------------------------- -->
-        <div class=" flex justify-between align-center">
-          <button class="main-btn hide my-2" id="previous">preccedant</button>
-          <button class="main-btn my-2" id="next">suivant</button>
-            </div>
+                    <h1>Information personnel</h1>
+                    <label for="name">le nom complet</label><br>
+                    <input type="text" name="name" id="name" placeholder="entrer votre nom"><br>
+                    <label for="name">email adress</label><br>
+                    <input type="email" name="email" id="email" placeholder="entrer votre email"><br>
+                    <label for="name">password</label><br>
+                    <input type="password" name="password" id="password" placeholder="entrer votre password">
+                  </div>
+              </div>
+              <button class="main-btn">s'inscrire</button>
             </form>
         </div>    
         </section>
